@@ -28,6 +28,10 @@ public class ExceptionDemo
 			{
 				e.printStackTrace();
 			}
+			finally 
+			{
+				System.out.println("iam finally Block....");
+			}
 		}
 
 	}

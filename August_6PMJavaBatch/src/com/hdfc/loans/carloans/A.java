@@ -2,7 +2,7 @@ package com.hdfc.loans.carloans;
 
 import java.util.Date;
 
-public abstract class A 
+public  class A 
 {
 	final int x = 100;
 	public final static String  cname = "vmware";
@@ -29,7 +29,7 @@ public abstract class A
 		System.out.println(dt);
 	}
 	
-	public abstract void m6();
+	
 	
 	public static void main(String[] args) 
 	{
