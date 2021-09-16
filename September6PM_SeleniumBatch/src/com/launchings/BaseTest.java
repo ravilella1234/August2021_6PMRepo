@@ -2,6 +2,7 @@ package com.launchings;
 
 import java.io.FileInputStream;
 import java.util.Properties;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -54,7 +55,9 @@ public class BaseTest
 	
 	public static void navigateUrl(String url)
 	{
-		driver.get(childProp.getProperty(url));
+		//driver.get(childProp.getProperty(url));
+		driver.navigate().to(childProp.getProperty(url));
+		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
 	}
 
 }
