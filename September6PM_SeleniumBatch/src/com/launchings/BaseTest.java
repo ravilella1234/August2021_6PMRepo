@@ -7,6 +7,9 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.firefox.FirefoxProfile;
+import org.openqa.selenium.firefox.ProfilesIni;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
@@ -48,8 +51,37 @@ public class BaseTest
 		}
 		else if(p.getProperty(browser).equals("firefox"))
 		{
+			//Binaries
+			//logs
+			System.setProperty(FirefoxDriver.SystemProperty.BROWSER_LOGFILE, projectPath+"\\firefoxlogs.log");
+			//Notifications
+			//certificate errors
+			//work with proxy settings
+			
 			WebDriverManager.firefoxdriver().setup();
-			driver = new FirefoxDriver();
+			
+			ProfilesIni p = new ProfilesIni();
+			FirefoxProfile profile = p.getProfile("septemberffprofile");
+			
+			FirefoxOptions option  = new FirefoxOptions();
+			option.setProfile(profile);
+			
+			//Notifications
+			profile.setPreference("dom.webnotifications.enabled", false);
+			
+			//Binaries
+			//option.setBinary("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
+			
+			//certificate errors
+			profile.setAcceptUntrustedCertificates(true);
+			profile.setAssumeUntrustedCertificateIssuer(false);
+			
+			//work with proxy settings // about:config
+			profile.setPreference("network.proxy.type", 1);
+			profile.setPreference("network.proxy.socks", "192.168.10.1");// dummy IP i have given make a note
+			profile.setPreference("network.proxy.socks_port", 1744);
+			
+			driver = new FirefoxDriver(option);
 		}
 	}
 	

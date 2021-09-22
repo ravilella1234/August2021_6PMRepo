@@ -1,0 +1,10 @@
+1632316992239	geckodriver	INFO	Listening on 127.0.0.1:19318
+1632317056491	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\ravi\\AppData\\Local\\Temp\\rust_mozprofileM3zn4G"
+1632317057438	Marionette	INFO	Marionette enabled
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
+1632317060341	Marionette	INFO	Listening on port 52064
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 1914: TypeError: data is null
+1632317060752	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.log: WebExtensions: reset-default-search: starting.
+console.log: WebExtensions: reset-default-search: has already ran once and saw panel, exit.
