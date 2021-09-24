@@ -4,6 +4,7 @@ import java.io.FileInputStream;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -81,13 +82,13 @@ public class BaseTest
 			//option.setBinary("C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe");
 			
 			//certificate errors
-			profile.setAcceptUntrustedCertificates(true);
-			profile.setAssumeUntrustedCertificateIssuer(false);
+			//profile.setAcceptUntrustedCertificates(true);
+			//profile.setAssumeUntrustedCertificateIssuer(false);
 			
 			//work with proxy settings // about:config
-			profile.setPreference("network.proxy.type", 1);
-			profile.setPreference("network.proxy.socks", "192.168.10.1");// dummy IP i have given make a note
-			profile.setPreference("network.proxy.socks_port", 1744);
+			//profile.setPreference("network.proxy.type", 1);
+			//profile.setPreference("network.proxy.socks", "192.168.10.1");// dummy IP i have given make a note
+			//profile.setPreference("network.proxy.socks_port", 1744);
 			
 			driver = new FirefoxDriver(option);
 		}
@@ -98,6 +99,21 @@ public class BaseTest
 		//driver.get(childProp.getProperty(url));
 		driver.navigate().to(childProp.getProperty(url));
 		driver.manage().timeouts().pageLoadTimeout(40, TimeUnit.SECONDS);
+	}
+	
+	public static void clickElement(String locator) 
+	{
+		driver.findElement(By.id(locator)).click();
+	}
+
+	public static void selectOption(String locator, String option) 
+	{
+		driver.findElement(By.id(locator)).sendKeys(option);
+	}
+
+	public static void type(String locator, String text) 
+	{
+		driver.findElement(By.id(locator)).sendKeys(text);
 	}
 
 }
