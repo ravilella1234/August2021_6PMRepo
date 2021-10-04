@@ -1,9 +1,11 @@
 package com.launchings;
 
 import java.io.FileInputStream;
+import java.util.Date;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -27,9 +29,12 @@ public class BaseTest
 	public static Properties mainProp;
 	public static Properties childProp;
 	public static Properties orProp;
+	public static Date d;
 	
 	public static void init() throws Exception
 	{
+		d = new Date();
+	
 		fis = new FileInputStream(projectPath+"\\data.properties");
 		p = new Properties();
 		p.load(fis);
@@ -50,6 +55,9 @@ public class BaseTest
 		fis = new FileInputStream(projectPath+"\\or.properties");
 		orProp = new Properties();
 		orProp.load(fis);
+		
+		fis = new FileInputStream(projectPath+"\\log4jconfig.properties");
+		PropertyConfigurator.configure(fis);
 	}
 	
 	public static void launch(String browser)

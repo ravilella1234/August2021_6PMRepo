@@ -1,0 +1,19 @@
+Init the Properties files....
+Opened the Browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selecting the option Books By using the locator :-searchDropdownBox
+Entered the text  Harry Potter By using the locator :- field-keywords
+Clicked on Element By using locator :- //*[@id="nav-search-submit-button"]
+Init the Properties files....
+Opened the Browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selecting the option Books By using the locator :-searchDropdownBox
+Entered the text  Harry Potter By using the locator :- field-keywords
+Clicked on Element By using locator :- //*[@id="nav-search-submit-button"]
+Execution Log Info --- Mon Oct 04 19:09:01 IST 2021
+Init the Properties files.... 
+Opened the Browser :- chrome
+Navigated to url :- https://www.amazon.in
+Selecting the option Books By using the locator :-searchDropdownBox
+Entered the text  Harry Potter By using the locator :- field-keywords
+Clicked on Element By using locator :- //*[@id="nav-search-submit-button"]
