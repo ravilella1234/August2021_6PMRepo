@@ -74,7 +74,7 @@ public class BaseTest
 	
 	public static void launch(String browser)
 	{
-		if(p.getProperty(browser).equals("chrome"))
+		if(browser.equals("chrome"))
 		{
 			WebDriverManager.chromedriver().setup();
 			
@@ -86,7 +86,7 @@ public class BaseTest
 			//option.addArguments("--proxy-server=https://192.168.10.1:9090");
 			driver = new ChromeDriver(option);
 		}
-		else if(p.getProperty(browser).equals("firefox"))
+		else if(browser.equals("firefox"))
 		{
 			//Binaries
 			//logs
