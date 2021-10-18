@@ -11,7 +11,7 @@ import org.testng.annotations.AfterMethod;
 public class TNG_003 extends BaseTest
 {
 	
-  @BeforeMethod
+  @BeforeMethod(groups = {"regression"})
   @Parameters("browser")
   public void beforeMethod(String bType) throws Exception 
   {
@@ -26,7 +26,7 @@ public class TNG_003 extends BaseTest
 		test.log(Status.INFO, "Navigated to url :- " + childProp.getProperty("amazonurl"));
   }
 
-  @Test
+  @Test(groups = {"regression"})
   public void f() 
   {
 	    selectOption("amazondropdown_id","Books");
@@ -40,7 +40,7 @@ public class TNG_003 extends BaseTest
   }
   
   
-  @AfterMethod
+  @AfterMethod(groups = {"regression"})
   public void afterMethod() 
   {
 	  driver.quit();

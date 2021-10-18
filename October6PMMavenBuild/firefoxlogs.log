@@ -1,1 +1,20 @@
-1634132563311	geckodriver	INFO	Listening on 127.0.0.1:43300
+1634563078059	geckodriver	INFO	Listening on 127.0.0.1:41191
+1634563150099	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "--marionette" "-no-remote" "-profile" "C:\\Users\\ravi\\AppData\\Local\\Temp\\rust_mozprofileC9QPpR"
+1634563151823	Marionette	INFO	Marionette enabled
+1634563157064	Marionette	INFO	Listening on port 62037
+1634563157327	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Failed to connect WebRenderBridgeChild.
+1634563160118	Marionette	INFO	Stopped listening on port 62037
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'MarionetteEvents'
+JavaScript error: resource:///modules/Interactions.jsm, line 201: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIUserIdleService.removeIdleObserver]
+JavaScript error: resource://gre/modules/ExtensionCommon.jsm, line 1914: TypeError: data is null
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x39007A,name=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+JavaScript error: resource://gre/modules/AsyncShutdown.jsm, line 718: Error: Phase "Sqlite.jsm: wait until all connections are closed" is finished, it is too late to register completion condition "protections.sqlite#0: waiting for shutdown"
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
