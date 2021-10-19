@@ -37,7 +37,7 @@ public class LinksTesting1 extends BaseTest
 	 {
 		String expval="Google Images";
 		
-		driver.findElement(By.linkText("Images")).click();	
+		driver.findElement(By.linkText("Image")).click();	
 		Reporter.log("Clicked on Image Link");
 		String actval=driver.getTitle();
 		System.out.println(actval);
