@@ -1,0 +1,17 @@
+Travel Website - To book a hotel
+
+Req1 - GoTo Website , Check-InDate , Check-OutDate, Adults, Type of Rooms, Payments, Check for        confirmation through mobile/mail.
+
+Req2 - GoTo Website , Check-InDate , Check-OutDate, Adults, Type of Rooms, Payments(card,g-PAy,bank),        Check for confirmation through mobile/mail.
+
+Req3 - GoTo Website , Check-InDate , Check-OutDate, Adults, Type of Rooms, Payments(card,g-PAy,bank)/        pay@hotel, Check for confirmation through mobile/mail.
+
+
+Req4 - GoTo Website , Check-InDate(within 7 days from today - no cancellation) , Check-OutDate,        Adults, Type of Rooms, Payments(card,g-PAy,bank)/pay@hotel, Check for confirmation through            mobile/mail.
+
+Req5 -  GoTo Website , Check-InDate(within 7 days from today - no cancellation) , Check-OutDate,        	Adults, Type of Rooms, Payments(card,g-PAy,bank)(10-20% off) / pay@hotel(5-10% off), Check for         confirmation through mobile/mail.
+
+
+Make a New Booking
+Modify the Existing Booking
+Cancel the Existing Booking
