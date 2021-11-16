@@ -1,0 +1,48 @@
+What is a framework?
+A framework is a platform that has all the tools, libraires organized and set in a defined structure to enable automation testing.
+
+
+Why automation Framework is Required?
+
+1) To organize all the test artifacts in a single location.
+2) To structure all the arifacts so it is very easy to maintain & to work with.
+3) Scalabilty
+4) Reusability
+
+
+1) Generic Libraries
+      - openBrowser
+      - navigate
+      - type
+      - click
+      - select
+      - getText
+
+
+2) Application Dependent Libraries
+      - Login
+      - selectDatefromCalander
+
+3) Validation Libraries
+      - validateTitle
+      - validateText
+      - validateElementPresent
+      - validateUrl
+
+
+-------------------------------------------------
+
+rediff url : https://portfolio.rediff.com/portfolio
+
+Create Portfolio Test  -  Login, Create Portfolio, Verify the created portfolio, Logout
+Delete Portfolio Test  -  Login, Select the existing Portfolio, Delete Portfolio, Verify the Deleted                           portfolio , Logout
+
+Add New Stock   -  Login, Select the portfolio, Add the Stock, Verify Quantity, verify avg price,                         verify Transaction History, Logout
+
+Modify Existing Stock - Login, Select the protfolio, Select the existing stock, Buy the stocks, Verify                         Quantity, verify avg price, verify Transaction History, Logout
+
+
+
+
+
+
