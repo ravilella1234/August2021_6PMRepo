@@ -35,11 +35,11 @@ Why automation Framework is Required?
 rediff url : https://portfolio.rediff.com/portfolio
 
 Create Portfolio Test  -  Login, Create Portfolio, Verify the created portfolio, Logout
-Delete Portfolio Test  -  Login, Select the existing Portfolio, Delete Portfolio, Verify the Deleted                           portfolio , Logout
+Delete Portfolio Test  -  Login, Select the existing Portfolio, Delete Portfolio, Verify the Deleted portfolio , Logout
 
-Add New Stock   -  Login, Select the portfolio, Add the Stock, Verify Quantity, verify avg price,                         verify Transaction History, Logout
+Add New Stock   -  Login, Select the portfolio, Add the Stock, Verify Quantity, verify avg price,verify Transaction History, Logout
 
-Modify Existing Stock - Login, Select the protfolio, Select the existing stock, Buy the stocks, Verify                         Quantity, verify avg price, verify Transaction History, Logout
+Modify Existing Stock - Login, Select the protfolio, Select the existing stock, Buy the stocks, Verify Quantity, verify avg price, verify Transaction History, Logout
 
 
 
