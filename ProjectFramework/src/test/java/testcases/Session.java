@@ -11,7 +11,8 @@ public class Session extends BaseTest
   public void doLogin() 
   {
 	  System.out.println("Logging In...");
-	  
+	  app.navigate("rediffurl");
+	  app.type("emailid_id", "ravilella2021@rediffmail.com");
   }
   
   @Test

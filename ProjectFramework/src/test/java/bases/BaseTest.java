@@ -9,9 +9,10 @@ import keywords.ApplicationKeywords;
 public class BaseTest 
 {
 	public ApplicationKeywords app;
+	
   
    @BeforeTest
-   public void beforeTest(ITestContext context) 
+   public void beforeTest(ITestContext context) throws Exception 
    {
 	  System.out.println("--------------- Before test ------------");  
 	  app = new ApplicationKeywords();
