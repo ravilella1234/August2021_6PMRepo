@@ -15,7 +15,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class GenericKeywords extends ValidationKeywords
 {
-	 public String projectpath = System.getProperty("user.dir");
+	 public static  String projectpath = System.getProperty("user.dir");
 	 public WebDriver driver;
 	 Properties mainProp;
 	 Properties childProp;

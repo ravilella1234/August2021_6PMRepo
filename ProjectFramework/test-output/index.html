@@ -135,28 +135,6 @@
           <div class="suite-ProtifolioSuite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testcases.PortifolioManagement</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="createportifolio">
-                  </a> <!-- createportifolio -->
-                  <span class="method-name">createportifolio</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="deleteportifolio">
-                  </a> <!-- deleteportifolio -->
-                  <span class="method-name">deleteportifolio</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-ProtifolioSuite-class-passed -->
-          <div class="suite-ProtifolioSuite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
               <span class="class-name">testcases.Session</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -172,6 +150,28 @@
                   <a name="doLogin">
                   </a> <!-- doLogin -->
                   <span class="method-name">doLogin</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-ProtifolioSuite-class-passed -->
+          <div class="suite-ProtifolioSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">testcases.PortifolioManagement</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="createportifolio">
+                  </a> <!-- createportifolio -->
+                  <span class="method-name">createportifolio</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteportifolio">
+                  </a> <!-- deleteportifolio -->
+                  <span class="method-name">deleteportifolio</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -258,19 +258,19 @@ data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'doLogin')
 data.setCell(0, 2, 'testcases.Session')
-data.setCell(0, 3, 1886);
+data.setCell(0, 3, 1873);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'doLogin')
 data.setCell(1, 2, 'testcases.Session')
-data.setCell(1, 3, 1791);
+data.setCell(1, 3, 1808);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'createportifolio')
+data.setCell(2, 1, 'deleteportifolio')
 data.setCell(2, 2, 'testcases.PortifolioManagement')
-data.setCell(2, 3, 3);
+data.setCell(2, 3, 12);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'deleteportifolio')
+data.setCell(3, 1, 'createportifolio')
 data.setCell(3, 2, 'testcases.PortifolioManagement')
-data.setCell(3, 3, 2);
+data.setCell(3, 3, 8);
 window.suiteTableData['ProtifolioSuite']= { tableData: data, tableDiv: 'times-div-ProtifolioSuite'}
 return data;
 }
@@ -290,12 +290,25 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-ProtifolioSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">6 ignored methods</span>
+            <span class="header-content">8 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
+              <span class="ignored-class-name">testcases.Session</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">doLogout</span>
+                <br/>
+                <span class="ignored-method-name">doLogout</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+            <div class="ignored-class-div">
               <span class="ignored-class-name">testcases.PortifolioManagement</span>
               <div class="ignored-methods-div">
+                <span class="ignored-method-name">quit</span>
+                <br/>
+                <span class="ignored-method-name">quit</span>
+                <br/>
                 <span class="ignored-method-name">beforeTest</span>
                 <br/>
                 <span class="ignored-method-name">beforeTest</span>
@@ -303,15 +316,6 @@ return data;
                 <span class="ignored-method-name">createportifolio</span>
                 <br/>
                 <span class="ignored-method-name">deleteportifolio</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">testcases.Session</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">doLogout</span>
-                <br/>
-                <span class="ignored-method-name">doLogout</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -325,54 +329,65 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.Session</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest(org.testng.TestRunner@5c080ef3)</span>
+                <span class="method-name">beforeTest(org.testng.TestRunner@59b32539)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@5c080ef3)</span>
-                <span class="method-start">7835 ms</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@59b32539)</span>
+                <span class="method-start">7666 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">doLogin</span>
-                <span class="method-start">7836 ms</span>
+                <span class="method-start">7666 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.PortifolioManagement</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@5c080ef3)</span>
-                <span class="method-start">9635 ms</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@59b32539)</span>
+                <span class="method-start">9546 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">createportifolio</span>
-                <span class="method-start">9636 ms</span>
+                <span class="method-start">9547 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.Session</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quit</span>
+                <span class="method-start">9560 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-test before">
-                <span class="method-name">beforeTest(org.testng.TestRunner@188cbcde)</span>
-                <span class="method-start">9698 ms</span>
+                <span class="method-name">beforeTest(org.testng.TestRunner@5b47731f)</span>
+                <span class="method-start">11184 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@188cbcde)</span>
-                <span class="method-start">12952 ms</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@5b47731f)</span>
+                <span class="method-start">14583 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">doLogin</span>
-                <span class="method-start">12953 ms</span>
+                <span class="method-start">14583 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.PortifolioManagement</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">beforeMethod(org.testng.TestRunner@188cbcde)</span>
-                <span class="method-start">14844 ms</span>
+                <span class="method-name">beforeMethod(org.testng.TestRunner@5b47731f)</span>
+                <span class="method-start">16400 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deleteportifolio</span>
-                <span class="method-start">14845 ms</span>
+                <span class="method-start">16400 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.Session</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
+                <span class="method-name">quit</span>
+                <span class="method-start">16415 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
