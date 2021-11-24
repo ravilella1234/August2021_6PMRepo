@@ -14,6 +14,7 @@ public class Session extends BaseTest
   {
 	  System.out.println("Logging In...");
 	  test.log(Status.INFO, "Logging In...");
+	  app.openBrowser("chrome");
 	  app.navigate("rediffurl");
 	  app.type("emailid_id", "ravilella2021@rediffmail.com");
   }

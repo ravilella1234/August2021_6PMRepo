@@ -24,14 +24,17 @@ public class BaseTest
 	  System.out.println("--------------- Before test ------------");  
 	  app = new ApplicationKeywords();
 	  context.setAttribute("app", app);
-	  app.openBrowser("chrome");
+	 
 	  
 	  //init the Reporting for the Test
 	  rep = ExtentManager.getReports();
 	  test =  rep.createTest(context.getCurrentXmlTest().getName());
 	  
+	  app.setReport(test);
 	  context.setAttribute("Report", rep);
 	  context.setAttribute("Test", test);
+	  
+	  
    }
 	
    @BeforeMethod

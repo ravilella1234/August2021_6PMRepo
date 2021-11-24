@@ -4,7 +4,9 @@ import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.util.Properties;
 
-public class ApplicationKeywords extends GenericKeywords
+import com.aventstack.extentreports.Status;
+
+public class ApplicationKeywords extends ValidationKeywords
 {
 	
 	public ApplicationKeywords() throws Exception
@@ -35,7 +37,8 @@ public class ApplicationKeywords extends GenericKeywords
 
 	public void login()
 	{
-		
+		//test.log(Status.INFO, "login");
+		log("login");
 	}
 	
     public void selectDatefromCalander()

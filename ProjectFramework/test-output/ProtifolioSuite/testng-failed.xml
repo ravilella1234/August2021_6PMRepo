@@ -5,6 +5,7 @@
     <classes>
       <class name="testcases.PortifolioManagement">
         <methods>
+          <include name="quit"/>
           <include name="beforeTest"/>
           <include name="createportifolio"/>
           <include name="beforeMethod"/>
@@ -13,6 +14,7 @@
       <class name="testcases.Session">
         <methods>
           <include name="doLogin"/>
+          <include name="quit"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
         </methods>
@@ -23,6 +25,7 @@
     <classes>
       <class name="testcases.PortifolioManagement">
         <methods>
+          <include name="quit"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
           <include name="deleteportifolio"/>
@@ -31,6 +34,7 @@
       <class name="testcases.Session">
         <methods>
           <include name="doLogin"/>
+          <include name="quit"/>
           <include name="beforeTest"/>
           <include name="beforeMethod"/>
         </methods>

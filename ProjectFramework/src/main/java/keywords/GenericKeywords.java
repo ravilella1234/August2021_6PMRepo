@@ -11,20 +11,27 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-public class GenericKeywords extends ValidationKeywords
+public class GenericKeywords 
 {
 	 public static  String projectpath = System.getProperty("user.dir");
 	 public WebDriver driver;
 	 Properties mainProp;
 	 Properties childProp;
 	 Properties orProp;
+	 public ExtentTest test;
 	 
 	
 	 public void openBrowser(String browser)
 	 {
 		 System.out.println("Opening the Browser :" + browser);
+		 //test.log(Status.INFO, "Opening the Browser :" + browser);
+		 log("Opening the Browser :" + browser);
 		 
 		 if(browser.equals("chrome")) {
 			 WebDriverManager.chromedriver().setup();
@@ -38,18 +45,24 @@ public class GenericKeywords extends ValidationKeywords
 	 public void navigate(String url)
 	 {
 		 System.out.println("Navigate to :- " +  url);
+		// test.log(Status.INFO, "Navigate to :- " +  url);
+		 log("Navigate to :- " +  url);
 		 driver.get(childProp.getProperty(url));
 	 }
 	 
 	 public void type(String locatorKey,String text)
 	 {
 		 System.out.println("Typig text : "+ locatorKey +" Data : " +  text);
+		// test.log(Status.INFO, "Typig text : "+ locatorKey +" Data : " +  text);
+		 log("Typig text : "+ text +" with Locator : " +  locatorKey);
 		 getElement(locatorKey).sendKeys(text);
 	 }
 	 
 	 public void click(String locatorKey)
 	 {
 		 System.out.println("Clicking on :- " + locatorKey);
+		 //test.log(Status.INFO, "Clicking on :- " + locatorKey);
+		 log("Clicking on :- " + locatorKey);
 		 getElement(locatorKey).click();
 	 }
 	 
@@ -120,5 +133,15 @@ public class GenericKeywords extends ValidationKeywords
 			
 		}
 	
+		public void setReport(ExtentTest test)
+		{
+			this.test = test;
+		}
+		
+		//Reporting Functions
+		public void log(String msg)
+		{
+			test.log(Status.INFO, msg);
+		}
 	
 }
