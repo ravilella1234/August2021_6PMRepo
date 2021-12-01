@@ -3,14 +3,6 @@
 <suite name="Failed suite [ProtifolioSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Create PortifolioTest(failed)">
     <classes>
-      <class name="testcases.PortifolioManagement">
-        <methods>
-          <include name="quit"/>
-          <include name="beforeTest"/>
-          <include name="createportifolio"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- testcases.PortifolioManagement -->
       <class name="testcases.Session">
         <methods>
           <include name="doLogin"/>
@@ -23,14 +15,6 @@
   </test> <!-- Create PortifolioTest(failed) -->
   <test thread-count="5" name="Delete PortifolioTest(failed)">
     <classes>
-      <class name="testcases.PortifolioManagement">
-        <methods>
-          <include name="quit"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="deleteportifolio"/>
-        </methods>
-      </class> <!-- testcases.PortifolioManagement -->
       <class name="testcases.Session">
         <methods>
           <include name="doLogin"/>

@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [ProtifolioSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Create PortifolioTest(failed)">
     <classes>
-      <class name="bases.AssertionDemo">
+      <class name="testcases.Session">
         <methods>
-          <include name="m1"/>
+          <include name="doLogin"/>
+          <include name="quit"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- bases.AssertionDemo -->
+      </class> <!-- testcases.Session -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Create PortifolioTest(failed) -->
+  <test thread-count="5" name="Delete PortifolioTest(failed)">
+    <classes>
+      <class name="testcases.Session">
+        <methods>
+          <include name="doLogin"/>
+          <include name="quit"/>
+          <include name="beforeTest"/>
+          <include name="beforeMethod"/>
+        </methods>
+      </class> <!-- testcases.Session -->
+    </classes>
+  </test> <!-- Delete PortifolioTest(failed) -->
+</suite> <!-- Failed suite [ProtifolioSuite] -->

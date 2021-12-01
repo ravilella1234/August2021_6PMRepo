@@ -10,8 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.asserts.SoftAssert;
 
-import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
@@ -25,6 +25,7 @@ public class GenericKeywords
 	 Properties childProp;
 	 Properties orProp;
 	 public ExtentTest test;
+	 public SoftAssert softAssert;
 	 
 	
 	 public void openBrowser(String browser)
@@ -54,8 +55,8 @@ public class GenericKeywords
 	 {
 		 System.out.println("Typig text : "+ locatorKey +" Data : " +  text);
 		// test.log(Status.INFO, "Typig text : "+ locatorKey +" Data : " +  text);
-		 log("Typig text : "+ text +" with Locator : " +  locatorKey);
-		 getElement(locatorKey).sendKeys(text);
+		 log("Typig text : "+ childProp.getProperty(text) +" with Locator : " +  orProp.getProperty(locatorKey));
+		 getElement(locatorKey).sendKeys(childProp.getProperty(text));
 	 }
 	 
 	 public void click(String locatorKey)
@@ -79,23 +80,27 @@ public class GenericKeywords
 	 
 	 
 	 public WebElement getElement(String locatorKey) 
-		{
+	{
+		 WebElement element = null;
 			//check for presence of Element
 			if(!isElementPresent(locatorKey))
+			{
 				//report the failure
 				System.out.println("Element is not present : " + locatorKey);
-			
-			WebElement element = null;
-			element = driver.findElement(getLocator(locatorKey));
-			
+				reportFailure("Element is not present : " + locatorKey, true);
+			}
+			else
+			{
+				element = driver.findElement(getLocator(locatorKey));
+			}
 			return element;
-			
-		}
+	}
 
 		
 		public  boolean isElementPresent(String locatorKey) 
 		{
 			System.out.println("Checking ElementPresent :- " + locatorKey);
+			log("Checking ElementPresent :- " + locatorKey);
 			WebDriverWait wait  = new WebDriverWait(driver, Duration.ofSeconds(30));
 			
 			try 
@@ -142,6 +147,22 @@ public class GenericKeywords
 		public void log(String msg)
 		{
 			test.log(Status.INFO, msg);
+		}
+		
+		public void reportFailure(String failureMsg, boolean stopOnFailure)
+		{
+			System.out.println(failureMsg);
+			test.log(Status.FAIL, failureMsg);
+			softAssert.fail(failureMsg);
+			
+			if(stopOnFailure)
+				assertAll(); // report all the failures
+				
+		}
+		
+		public void assertAll()
+		{
+			softAssert.assertAll();
 		}
 	
 }
