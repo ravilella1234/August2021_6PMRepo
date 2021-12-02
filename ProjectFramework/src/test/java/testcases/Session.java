@@ -17,9 +17,10 @@ public class Session extends BaseTest
 	  app.navigate("rediffurl");
 	  //Forcely iam generating softassert failure 
 	  app.reportFailure("Title is not matching", false);
-	  app.reportFailure("Test is incorrect", true);
+	  app.reportFailure("Test is incorrect", false);
 	  app.type("emailid_id", "rediffuser");
 	  app.type("emailpassword_name", "rediffpassword");
+	  app.click("submit_id");
 	  app.assertAll();
   }
   

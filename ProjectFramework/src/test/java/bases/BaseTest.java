@@ -1,6 +1,7 @@
 package bases;
 
 import org.testng.ITestContext;
+import org.testng.SkipException;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
@@ -41,6 +42,13 @@ public class BaseTest
    public void beforeMethod(ITestContext context)
    {
 	  System.out.println("................... Before Method ...................");
+	  
+	  String criticalFailure = (String)context.getAttribute("criticalFailure");
+	  if(criticalFailure!=null && criticalFailure.equals("Y"))
+	  {
+		  throw new SkipException("Critical Failure in Previous Tests");
+	  }
+	  
 	  app = (ApplicationKeywords)context.getAttribute("app");
 	  rep = (ExtentReports)context.getAttribute("Report");
 	  test = (ExtentTest)context.getAttribute("Test");

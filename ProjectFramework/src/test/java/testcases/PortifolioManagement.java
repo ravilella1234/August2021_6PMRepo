@@ -14,6 +14,7 @@ public class PortifolioManagement extends BaseTest
   {
 	System.out.println("Creating Portifolio");  
 	test.log(Status.INFO, "Creating Portifolio");
+	app.assertAll();
   }
   
   @Test

@@ -10,6 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Reporter;
 import org.testng.asserts.SoftAssert;
 
 import com.aventstack.extentreports.ExtentTest;
@@ -162,6 +163,7 @@ public class GenericKeywords
 		
 		public void assertAll()
 		{
+			Reporter.getCurrentTestResult().getTestContext().setAttribute("criticalFailure", "Y");
 			softAssert.assertAll();
 		}
 	
