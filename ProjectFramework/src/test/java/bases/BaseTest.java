@@ -10,7 +10,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 
 import keywords.ApplicationKeywords;
-import reports.ExtentManager;
+import reports.ExtentManager1;
 
 public class BaseTest 
 {
@@ -28,7 +28,7 @@ public class BaseTest
 	 
 	  
 	  //init the Reporting for the Test
-	  rep = ExtentManager.getReports();
+	  rep = ExtentManager1.getReports();
 	  test =  rep.createTest(context.getCurrentXmlTest().getName());
 	  
 	  app.setReport(test);

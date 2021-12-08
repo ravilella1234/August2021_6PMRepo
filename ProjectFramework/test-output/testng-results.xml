@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="8" total="12" passed="0" failed="2" skipped="2">
+<testng-results ignored="4" total="6" passed="0" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-12-02T13:40:26Z" name="ProtifolioSuite" finished-at="2021-12-02T13:41:45Z" duration-ms="79439">
+  <suite started-at="2021-12-08T13:38:00Z" name="ProtifolioSuite" finished-at="2021-12-08T13:38:48Z" duration-ms="47632">
     <groups>
     </groups>
-    <test started-at="2021-12-02T13:40:26Z" name="Create PortifolioTest" finished-at="2021-12-02T13:41:08Z" duration-ms="42893">
+    <test started-at="2021-12-08T13:38:00Z" name="Create PortifolioTest" finished-at="2021-12-08T13:38:48Z" duration-ms="47632">
       <class name="testcases.PortifolioManagement">
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.PortifolioManagement@62230c58]" started-at="2021-12-02T13:41:07Z" name="beforeMethod" finished-at="2021-12-02T13:41:07Z" duration-ms="1" status="SKIP">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.PortifolioManagement@62230c58]" started-at="2021-12-08T13:38:46Z" name="beforeMethod" finished-at="2021-12-08T13:38:46Z" duration-ms="1" status="SKIP">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1acb74ad]]>
+                <![CDATA[org.testng.TestRunner@6c8dbf56]]>
               </value>
             </param>
           </params>
@@ -56,7 +56,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="createportifolio()[pri:0, instance:testcases.PortifolioManagement@62230c58]" started-at="2021-12-02T13:41:07Z" name="createportifolio" finished-at="2021-12-02T13:41:07Z" duration-ms="0" status="SKIP">
+        <test-method signature="createportifolio()[pri:0, instance:testcases.PortifolioManagement@62230c58]" started-at="2021-12-08T13:38:46Z" name="createportifolio" finished-at="2021-12-08T13:38:46Z" duration-ms="0" status="SKIP">
           <exception class="org.testng.SkipException">
             <message>
               <![CDATA[Critical Failure in Previous Tests]]>
@@ -100,29 +100,29 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- createportifolio -->
       </class> <!-- testcases.PortifolioManagement -->
       <class name="testcases.Session">
-        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.Session@747edf66]" started-at="2021-12-02T13:40:26Z" name="beforeTest" finished-at="2021-12-02T13:40:26Z" duration-ms="678" status="PASS">
+        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.Session@747edf66]" started-at="2021-12-08T13:38:00Z" name="beforeTest" finished-at="2021-12-08T13:38:01Z" duration-ms="975" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1acb74ad]]>
+                <![CDATA[org.testng.TestRunner@6c8dbf56]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.Session@747edf66]" started-at="2021-12-02T13:40:26Z" name="beforeMethod" finished-at="2021-12-02T13:40:26Z" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.Session@747edf66]" started-at="2021-12-08T13:38:01Z" name="beforeMethod" finished-at="2021-12-08T13:38:01Z" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@1acb74ad]]>
+                <![CDATA[org.testng.TestRunner@6c8dbf56]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="doLogin()[pri:0, instance:testcases.Session@747edf66]" started-at="2021-12-02T13:40:26Z" name="doLogin" finished-at="2021-12-02T13:41:07Z" duration-ms="40978" status="FAIL">
+        <test-method signature="doLogin()[pri:0, instance:testcases.Session@747edf66]" started-at="2021-12-08T13:38:01Z" name="doLogin" finished-at="2021-12-08T13:38:46Z" duration-ms="44965" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[The following asserts failed:
@@ -136,10 +136,10 @@ Title is not matching,
 Test is incorrect,
 Element is not present : submit_id
 at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at keywords.GenericKeywords.assertAll(GenericKeywords.java:167)
-at keywords.GenericKeywords.reportFailure(GenericKeywords.java:160)
-at keywords.GenericKeywords.getElement(GenericKeywords.java:91)
-at keywords.GenericKeywords.click(GenericKeywords.java:68)
+at keywords.GenericKeywords.assertAll(GenericKeywords.java:193)
+at keywords.GenericKeywords.reportFailure(GenericKeywords.java:167)
+at keywords.GenericKeywords.getElement(GenericKeywords.java:97)
+at keywords.GenericKeywords.click(GenericKeywords.java:74)
 at testcases.Session.doLogin(Session.java:23)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
@@ -172,184 +172,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.Session@747edf66]" started-at="2021-12-02T13:41:07Z" name="quit" finished-at="2021-12-02T13:41:08Z" duration-ms="1184" status="PASS">
+        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.Session@747edf66]" started-at="2021-12-08T13:38:46Z" name="quit" finished-at="2021-12-08T13:38:48Z" duration-ms="1606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->
       </class> <!-- testcases.Session -->
     </test> <!-- Create PortifolioTest -->
-    <test started-at="2021-12-02T13:41:09Z" name="Delete PortifolioTest" finished-at="2021-12-02T13:41:45Z" duration-ms="36490">
-      <class name="testcases.PortifolioManagement">
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.PortifolioManagement@306f16f3]" started-at="2021-12-02T13:41:45Z" name="beforeMethod" finished-at="2021-12-02T13:41:45Z" duration-ms="0" status="SKIP">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@797fcf9]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Critical Failure in Previous Tests]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Critical Failure in Previous Tests
-at bases.BaseTest.beforeMethod(BaseTest.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="deleteportifolio()[pri:0, instance:testcases.PortifolioManagement@306f16f3]" started-at="2021-12-02T13:41:45Z" name="deleteportifolio" finished-at="2021-12-02T13:41:45Z" duration-ms="0" status="SKIP">
-          <exception class="org.testng.SkipException">
-            <message>
-              <![CDATA[Critical Failure in Previous Tests]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.SkipException: Critical Failure in Previous Tests
-at bases.BaseTest.beforeMethod(BaseTest.java:49)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:59)
-at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:458)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:222)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:523)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.SkipException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteportifolio -->
-      </class> <!-- testcases.PortifolioManagement -->
-      <class name="testcases.Session">
-        <test-method is-config="true" signature="beforeTest(org.testng.ITestContext)[pri:0, instance:testcases.Session@1b6e1eff]" started-at="2021-12-02T13:41:09Z" name="beforeTest" finished-at="2021-12-02T13:41:09Z" duration-ms="8" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@797fcf9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeTest -->
-        <test-method is-config="true" signature="beforeMethod(org.testng.ITestContext)[pri:0, instance:testcases.Session@1b6e1eff]" started-at="2021-12-02T13:41:09Z" name="beforeMethod" finished-at="2021-12-02T13:41:09Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[org.testng.TestRunner@797fcf9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="doLogin()[pri:0, instance:testcases.Session@1b6e1eff]" started-at="2021-12-02T13:41:09Z" name="doLogin" finished-at="2021-12-02T13:41:45Z" duration-ms="36107" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[The following asserts failed:
-Title is not matching,
-Test is incorrect,
-Element is not present : submit_id]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: The following asserts failed:
-Title is not matching,
-Test is incorrect,
-Element is not present : submit_id
-at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-at keywords.GenericKeywords.assertAll(GenericKeywords.java:167)
-at keywords.GenericKeywords.reportFailure(GenericKeywords.java:160)
-at keywords.GenericKeywords.getElement(GenericKeywords.java:91)
-at keywords.GenericKeywords.click(GenericKeywords.java:68)
-at testcases.Session.doLogin(Session.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- doLogin -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:testcases.Session@1b6e1eff]" started-at="2021-12-02T13:41:45Z" name="quit" finished-at="2021-12-02T13:41:45Z" duration-ms="341" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- testcases.Session -->
-    </test> <!-- Delete PortifolioTest -->
   </suite> <!-- ProtifolioSuite -->
 </testng-results>

@@ -19,7 +19,7 @@
   </test> <!-- Test -->
   
   
-  <test  name="Delete PortifolioTest">
+  <!--  <test  name="Delete PortifolioTest">
     <classes>
       <class name="testcases.Session">
       	<methods>
@@ -33,7 +33,7 @@
       </class>
       
     </classes>
-  </test> <!-- Test -->
+  </test>--> <!-- Test -->
   
   
 </suite> <!-- Suite -->

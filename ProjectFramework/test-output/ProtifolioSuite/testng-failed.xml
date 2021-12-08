@@ -21,24 +21,4 @@
       </class> <!-- testcases.PortifolioManagement -->
     </classes>
   </test> <!-- Create PortifolioTest(failed) -->
-  <test thread-count="5" name="Delete PortifolioTest(failed)">
-    <classes>
-      <class name="testcases.Session">
-        <methods>
-          <include name="doLogin"/>
-          <include name="quit"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- testcases.Session -->
-      <class name="testcases.PortifolioManagement">
-        <methods>
-          <include name="quit"/>
-          <include name="beforeTest"/>
-          <include name="beforeMethod"/>
-          <include name="deleteportifolio"/>
-        </methods>
-      </class> <!-- testcases.PortifolioManagement -->
-    </classes>
-  </test> <!-- Delete PortifolioTest(failed) -->
 </suite> <!-- Failed suite [ProtifolioSuite] -->
